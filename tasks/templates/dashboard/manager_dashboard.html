@@ -1,0 +1,85 @@
+  {% extends "dashboard/dashboard.html" %}  
+    {% block tasks %}
+    
+    
+
+
+
+    <!-- TABLE SECTION -->
+      <!-- TASK TABLE USING DIV -->
+<section class="bg-white rounded-xl shadow-sm p-6">
+
+  <h2 class="text-lg font-semibold mb-6 text-gray-800">Tasks</h2>
+
+  <!-- Header -->
+  <div class="hidden md:grid grid-cols-4 text-sm text-gray-400 font-semibold pb-3 border-b">
+    <div>Task Title</div>
+    <div>Priority</div>
+    <div>Team</div>
+    <div>Created At</div>
+  </div>
+
+  <!-- Rows -->
+  <div class="divide-y divide-gray-100">
+
+    <!-- Row 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-4 hover:bg-gray-50 transition">
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Task Title</p>
+        <p class="text-sm font-medium text-gray-800">Design Landing Page</p>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Priority</p>
+        <div class="flex items-center gap-2 text-sm text-gray-700">
+          <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+          High
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Team</p>
+        <p class="text-sm text-gray-700">Marketing</p>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Created At</p>
+        <p class="text-sm text-gray-700">Feb 12, 2026</p>
+      </div>
+
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-4 hover:bg-gray-50 transition">
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Task Title</p>
+        <p class="text-sm font-medium text-gray-800">Fix Login Bug</p>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Priority</p>
+        <div class="flex items-center gap-2 text-sm text-gray-700">
+          <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+          Low
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Team</p>
+        <p class="text-sm text-gray-700">Development</p>
+      </div>
+
+      <div>
+        <p class="text-xs text-gray-400 md:hidden">Created At</p>
+        <p class="text-sm text-gray-700">Feb 20, 2026</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    {% endblock tasks %}
